@@ -71,9 +71,9 @@ Start the Cypress UI
 npx cypress open
 ```
 
-Run the Cypress
+Run Cypress in the CLI
 ```sh
-npx cypress open
+npx cypress run
 ```
 
 All Cypress related files are located in the `cypress` folder.
