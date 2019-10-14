@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Code for the talk 'Using OpenAPI in Testing'",
   "scripts": {
-    "dev": "concurrently \"npm run mocks:watch\" \"nuxt\"",
+    "dev:all": "concurrently \"npm run mocks:watch\" \"npm run dev\"",
+    "dev": "nuxt",
     "mocks": "prism mock -d ./data/petstore.yml",
     "mocks:watch": "nodemon --exec npm run mocks -w ./data/petstore.yml",
     "test:e2e": "cypress run"
@@ -40,7 +41,6 @@
     "@stoplight/prism-core": "^3.1.1",
     "@stoplight/prism-http": "^3.1.1",
     "@stoplight/prism-http-server": "^3.1.1",
-    "@testing-library/cypress": "^5.0.2",
     "@vue/eslint-config-prettier": "^5.0.0",
     "@wemake-services/stylelint-config-scss": "^0.1.4",
     "autoprefixer": "^9.6.5",

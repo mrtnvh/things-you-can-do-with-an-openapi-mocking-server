@@ -1,14 +1,15 @@
 <template>
 	<div class="grid">
-		<article v-for="pet in pets" :key="pets.id">
+		<article v-for="pet in pets" :key="pets.id" data-testId="pet">
 			<div class="media">
 				<img
 					:src="pet.image"
 					:alt="`Photo of ${pet.name}`"
 					class="image"
+					data-testId="pet-image"
 				/>
 			</div>
-			<h1 class="title">{{ pet.name }}</h1>
+			<h1 class="title" data-testId="pet-title">{{ pet.name }}</h1>
 		</article>
 	</div>
 </template>

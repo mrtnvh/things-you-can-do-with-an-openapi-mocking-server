@@ -9,12 +9,16 @@ describe("Pets", () => {
 		cy.visit("/");
 
 		cy.wait("@getPets").then(xhr => {
+			cy.get(`[data-testId="pet"`).each(($pet, index) => {
+				const apiPet = xhr.response.body[index];
+				cy.wrap($pet)
+					.find("[data-testId='pet-image']")
+					.should("have.attr", "src", apiPet.image);
 
-			xhr.response.body.forEach((pet, index) => {
-				cy.queryByText('pet')
-				cy.queryByTestId(`img[src="${pet.image}"]`)
+				cy.wrap($pet)
+					.find("[data-testId='pet-title']")
+					.contains(apiPet.name);
 			});
-			assert.isNotNull(, "1st API call has data");
 		});
 	});
 });
