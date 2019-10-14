@@ -1,7 +1,7 @@
 <template>
 	<div class="layout">
 		<header>
-			<h1>Using OpenApi For Testing</h1>
+			<h1>Using OpenAPI For Testing</h1>
 		</header>
 		<main>
 			<nuxt />

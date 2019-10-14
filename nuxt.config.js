@@ -1,5 +1,6 @@
 export default {
 	srcDir: "src/",
+	mode: "spa",
 	css: ["normalize.css"],
 	modules: ["@nuxtjs/axios"],
 	axios: {
