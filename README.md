@@ -1,6 +1,8 @@
-# Using OpenAPI in Testing
+# Things you can to with an OpenAPI Mocking Server
 
-- [Using OpenAPI in Testing](#using-openapi-in-testing)
+Some examples of things you can do in a front end project with [Prism](https://stoplight.io/open-source/prism/), an OpenAPI mocking server.
+
+- [Things you can to with an OpenAPI Mocking Server](#things-you-can-to-with-an-openapi-mocking-server)
 	- [Requirements](#requirements)
 	- [Installation](#installation)
 	- [Run](#run)

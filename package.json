@@ -1,5 +1,5 @@
 {
-  "name": "using-openapi-in-testing",
+  "name": "things-you-can-do-with-an-openapi-mocking-server",
   "version": "1.0.0",
   "description": "Code for the talk 'Using OpenAPI in Testing'",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrtnvh/using-openapi-in-testing.git"
+    "url": "git+https://github.com/mrtnvh/things-you-can-do-with-an-openapi-mocking-server.git"
   },
   "keywords": [
     "testing",
@@ -28,9 +28,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mrtnvh/using-openapi-in-testing/issues"
+    "url": "https://github.com/mrtnvh/things-you-can-do-with-an-openapi-mocking-server/issues"
   },
-  "homepage": "https://github.com/mrtnvh/using-openapi-in-testing#readme",
+  "homepage": "https://github.com/mrtnvh/things-you-can-do-with-an-openapi-mocking-server#readme",
   "dependencies": {
     "@nuxtjs/axios": "^5.6.0",
     "normalize.css": "^8.0.1",
