@@ -7,7 +7,7 @@ Some examples of things you can do in a front end project with [Prism](https://s
 	- [Installation](#installation)
 	- [Run](#run)
 		- [1. npm](#1-npm)
-		- [2. WIP - Advanced JavaScript](#2-wip---advanced-javascript)
+		- [2. Advanced JavaScript](#2-advanced-javascript)
 		- [3. Docker](#3-docker)
 	- [Tests](#tests)
 
@@ -47,8 +47,8 @@ npm run mocks
 npm run mocks:watch
 ```
 
-### 2. WIP - Advanced JavaScript
-If the default Prism functionality doesn't meet your requirements, you could run Prism programmatically and plugin on the Fastify server Prism
+### 2. Advanced JavaScript
+If the default Prism functionality doesn't meet your requirements, you could run Prism programmatically and plugin on the [Fastify](https://www.fastify.io/) instance that Prism uses as server.
 ```sh
 npm run mocks:advanced
 
@@ -56,7 +56,7 @@ npm run mocks:advanced
 npm run mocks:advanced:watch
 ```
 
-The command will run the `mocks/prism.js` with Node.
+The command will run the `mocks/runner.js` with Node.
 
 ### 3. Docker
 Prism also provides a [Docker image](https://stoplight.io/p/docs/gh/stoplightio/prism/docs/getting-started/installation.md#docker) on which you can mock your OpenAPI document.
