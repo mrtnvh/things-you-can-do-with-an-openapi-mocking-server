@@ -7,6 +7,8 @@
     "dev": "nuxt",
     "mocks": "prism mock -d ./data/petstore.yml",
     "mocks:watch": "nodemon --exec npm run mocks -w ./data/petstore.yml",
+    "mocks:advanced": "node data/runner.js",
+    "mocks:advanced:watch": "nodemon --exec npm run mocks:advanced -w ./data/petstore.yml",
     "test:e2e": "cypress run"
   },
   "repository": {
