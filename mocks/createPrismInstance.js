@@ -5,7 +5,7 @@ const path = require("path");
 const { createServer } = require("@stoplight/prism-http-server");
 const { createLogger } = require("@stoplight/prism-core");
 
-const addHooks = require("./hooks");
+const withHooks = require("./hooks");
 
 const host = "localhost";
 const port = 3001;
@@ -18,7 +18,7 @@ module.exports = async () => {
 	const operations = await getHttpOperations(schemaPath);
 	const instance = createServer(operations, { config, components });
 
-	await addHooks(instance.fastify);
+	await withHooks(instance.fastify);
 
 	instance.listen(port, host).then(() => {
 		// eslint-disable-next-line no-console
