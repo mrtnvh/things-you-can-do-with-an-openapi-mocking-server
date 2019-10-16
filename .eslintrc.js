@@ -7,10 +7,9 @@ module.exports = {
 	},
 	parser: "vue-eslint-parser",
 	extends: ["airbnb-base", "plugin:vue/recommended", "@vue/prettier"],
-	plugins: ["prettier", "vue", "gridsome"],
+	plugins: ["prettier", "vue"],
 	rules: {
 		camelcase: 0,
-		"gridsome/format-query-block": "error",
 		"prettier/prettier": "error",
 		"no-console": process.env.NODE_ENV === "production" ? "error" : "off",
 		"no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",

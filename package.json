@@ -7,9 +7,10 @@
     "dev": "nuxt",
     "mocks": "prism mock -d ./data/petstore.yml",
     "mocks:watch": "nodemon --exec npm run mocks -w ./data/petstore.yml",
-    "mocks:advanced": "node data/runner.js",
-    "mocks:advanced:watch": "nodemon --exec npm run mocks:advanced -w ./data/petstore.yml",
-    "test:e2e": "cypress run"
+    "mocks:advanced": "node mocks/runner.js",
+    "mocks:advanced:watch": "nodemon --exec npm run mocks:advanced -w ./data/petstore.yml -w ./mocks",
+    "test:e2e": "cypress run",
+    "test:e2e:ci": "node ci/e2e.js"
   },
   "repository": {
     "type": "git",
@@ -47,13 +48,13 @@
     "@wemake-services/stylelint-config-scss": "^0.1.4",
     "autoprefixer": "^9.6.5",
     "concurrently": "^5.0.0",
+    "cors": "^2.8.5",
     "cssnano": "^4.1.10",
     "cypress": "^3.4.1",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-import-resolver-nuxt": "^0.1.5",
     "eslint-plugin-cypress": "^2.7.0",
-    "eslint-plugin-gridsome": "^1.3.2",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.2.3",

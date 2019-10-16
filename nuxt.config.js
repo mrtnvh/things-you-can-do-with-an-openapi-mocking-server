@@ -1,9 +1,9 @@
-export default {
+module.exports = {
 	srcDir: "src/",
 	mode: "spa",
 	css: ["normalize.css"],
 	modules: ["@nuxtjs/axios"],
 	axios: {
-		baseURL: "http://127.0.0.1:4010",
+		baseURL: "http://localhost:4010",
 	},
 };
