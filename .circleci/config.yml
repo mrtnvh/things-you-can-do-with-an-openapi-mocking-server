@@ -24,7 +24,7 @@ jobs:
             - ~/.npm
             - ~/.cache
       - run:
-          name: Running E2E tests with JUnit reporter
+          name: Running E2E tests with Cypress
           command: npm run test:e2e:ci
       - store_artifacts:
           path: cypress/videos
