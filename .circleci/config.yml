@@ -1,7 +1,7 @@
 version: 2
 
 jobs:
-  test:
+  test.e2e:
     docker:
       # the Docker image with Cypress dependencies
       - image: cypress/included:3.4.1
@@ -30,3 +30,8 @@ jobs:
           path: cypress/videos
       - store_artifacts:
           path: cypress/screenshots
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test.e2e
