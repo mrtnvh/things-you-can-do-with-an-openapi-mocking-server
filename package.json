@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Code for the talk 'Using OpenAPI in Testing'",
   "scripts": {
-    "dev:all": "concurrently \"npm run mocks:watch\" \"npm run dev\"",
-    "dev": "nuxt",
+    "dev": "concurrently \"npm run mocks:watch\" \"npm run dev:app\"",
+    "dev:app": "nuxt",
     "mocks": "prism mock -d ./data/petstore.yml",
     "mocks:watch": "nodemon --exec npm run mocks -w ./data/petstore.yml",
     "mocks:advanced": "node mocks/runner.js",
