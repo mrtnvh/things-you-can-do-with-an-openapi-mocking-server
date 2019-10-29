@@ -19,7 +19,7 @@ module.exports = async () => {
 	const operations = await getHttpOperations(schemaPath);
 	const instance = createServer(operations, { config, components });
 
-	instance.fastify.use(cors)
+	instance.fastify.use(cors);
 	await withHooks(instance.fastify);
 
 	instance.listen(port, host).then(() => {
