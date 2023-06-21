@@ -37,7 +37,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.6.0",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.10.1"
+    "nuxt": "^3.4.3"
   },
   "devDependencies": {
     "@stoplight/prism-cli": "^3.1.1",
